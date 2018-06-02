@@ -8,12 +8,13 @@
   (setq package-user-dir versioned-package-dir))
 
 
-
+
 ;;; Standard package repositories
 
 (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
-
+                         
+
 ;;; On-demand installation of packages
 
 (defun require-package (package &optional min-version no-refresh)

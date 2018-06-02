@@ -26,18 +26,19 @@
 (when (maybe-require-package 'git-commit)
   (add-hook 'git-commit-mode-hook 'goto-address-mode))
 
-
+
 (when *is-a-mac*
   (after-load 'magit
     (add-hook 'magit-mode-hook (lambda () (local-unset-key [(meta h)])))))
 
 
-
+
 ;; Convenient binding for vc-git-grep
 (after-load 'vc
   (define-key vc-prefix-map (kbd "f") 'vc-git-grep))
 
 
+
 ;;; git-svn support
 
 ;; (when (maybe-require-package 'magit-svn)
@@ -72,7 +73,7 @@
          (compilation-buffer-name-function (lambda (major-mode-name) "*git-svn*")))
     (compile (concat "git svn " command))))
 
-
+
 (maybe-require-package 'git-messenger)
 ;; Though see also vc-annotate's "n" & "p" bindings
 (after-load 'vc
