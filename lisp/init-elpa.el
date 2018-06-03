@@ -13,7 +13,6 @@
 
 (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
-                         
 
 ;;; On-demand installation of packages
 
