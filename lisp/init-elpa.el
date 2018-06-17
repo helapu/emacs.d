@@ -12,7 +12,8 @@
 ;;; Standard package repositories
 
 (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-                         ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+                         ("melpa" . "http://elpa.emacs-china.org/melpa/")
+                         ("org"   . "http://orgmode.org/elpa/")))
 
 ;;; On-demand installation of packages
 
